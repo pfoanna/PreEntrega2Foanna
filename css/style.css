@@ -1,0 +1,140 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.Grid-Container{
+border: blue 2px solid;
+display: grid;
+grid-template-columns: 100px 300px 100px;
+grid-template-rows: 100px 100px 300px 200px;
+row-gap: 20px;
+column-gap: 20px;
+}
+
+.Grid-Item{
+border: solid blue 2px
+
+}
+
+.uno{
+grid-column: 1/6;
+}
+
+.dos{
+    grid-column: 1/6;
+}
+
+body{background-color: white ;
+}
+
+Header{
+ border-bottom: 5px solid blue;
+ display: flex;
+ background-color: lightblue;
+ justify-content: center;
+ align-items: center;
+}
+
+header img{
+    /* ancho */
+    width: 130px;
+    /*alto*/
+    height: 90px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    /*margin*/
+   
+    align-self: first baseline;
+ } 
+
+ header nav ul{
+    display: flex;
+    list-style-type: none;
+    
+ }
+
+header nav ul li a{
+   /* propiedades para modificar el contenido de mi etiqueta */
+   display: flex;
+   list-style-type: none;
+    background-color: rgb(0, 147, 221);
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    border-bottom: 2PX SOLID black;
+    border-left: 2PX SOLID black;
+    border-top: 2PX SOLID black;
+    border-right: 2PX SOLID black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    align-item:border-right
+}
+
+ul li{
+   justify-content: center;
+   align-items: center;
+}
+
+li a:hover{
+color: black;
+}
+
+h1{ 
+    color: rgb(0, 147, 221);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+}
+
+.Nosotros{color:rgb(10, 10, 87);
+}
+
+p span{ color: rgb(1, 88, 8);
+}
+
+p{background-color: rgb(255, 248, 240);
+      
+}
+
+footer{
+
+   color: blue;
+   text-decoration:none;
+   font-size: 15px;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 500;
+   font-style: initial;
+}
+
+    /* flex */
+    section{
+    display: flex;
+    /*flex wrap*/ /*que no desborde el body*/
+    flex-wrap: wrap;
+  }
+    /*flex direction*/
+    .imagen1{
+        flex-direction: column;
+    /*flex flow mezclo wrap y direction en la misma*/
+}
+   
+#section-description{
+    display: flex;
+    /*flex wrap*/ /*que no desborde el body*/
+    flex-wrap: wrap;
+
+}
+
+
+#section-imagenes{
+display:flex;
+width: 130px;
+    /*alto*/
+    height: 90px;
+
+}
