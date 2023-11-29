@@ -8,15 +8,14 @@ box-sizing: border-box;
 .Grid-Container{
 border: blue 2px solid;
 display: grid;
-grid-template-columns: 100px 300px 100px;
-grid-template-rows: 100px 100px 300px 200px;
-row-gap: 20px;
+grid-template-columns: 150px 150px 150px;
+grid-template-rows: 99px 80px 150px;
+row-gap: 50px;
 column-gap: 20px;
 }
 
 .Grid-Item{
 border: solid blue 2px
-
 }
 
 .uno{
@@ -25,9 +24,33 @@ grid-column: 1/6;
 
 .dos{
     grid-column: 1/6;
+    background-color: rgb(241, 234, 234);
+    
+}
+
+.tres{
+        grid-column: 3/4;
+
+}
+
+.cuatro{
+    grid-column: 4/5;
+}
+
+.cinco{
+    grid-column: 2/3;
+}
+
+.seis{
+    grid-column: 4/5;
 }
 
 body{background-color: white ;
+}
+
+.tres div img{
+width: 150px;
+height: 150px;
 }
 
 Header{
@@ -73,7 +96,8 @@ header nav ul li a{
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
-    align-item:border-right
+    position: sticky;
+    
 }
 
 ul li{
@@ -88,7 +112,10 @@ color: black;
 h1{ 
     color: rgb(0, 147, 221);
     font-family: Arial, Helvetica, sans-serif;
-    font-size:xx-large;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 .Nosotros{color:rgb(10, 10, 87);
@@ -97,9 +124,7 @@ h1{
 p span{ color: rgb(1, 88, 8);
 }
 
-p{background-color: rgb(255, 248, 240);
-      
-}
+
 
 footer{
 
@@ -118,10 +143,9 @@ footer{
     flex-wrap: wrap;
   }
     /*flex direction*/
-    .imagen1{
-        flex-direction: column;
+   
     /*flex flow mezclo wrap y direction en la misma*/
-}
+
    
 #section-description{
     display: flex;
@@ -131,10 +155,4 @@ footer{
 }
 
 
-#section-imagenes{
-display:flex;
-width: 130px;
-    /*alto*/
-    height: 90px;
 
-}
